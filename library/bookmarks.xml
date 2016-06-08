@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bookmark>
-<link>
-	<name>Google</name>
-	<url>https://www.google.com</url>
-	<img>https://lh4.googleusercontent.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAADeDU/qAh8CaUbI3Y/s0-c-k-no-ns/photo.jpg</img>
-</link>
+	<category name="Search engines">
+		<link>
+			<name>Google</name>
+			<url>https://www.google.com</url>
+			<img>https://lh4.googleusercontent.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAADeDU/qAh8CaUbI3Y/s0-c-k-no-ns/photo.jpg</img>
+		</link>
+		<link>
+			<name>Microsoft</name>
+			<url>https://www.microsoft.com</url>
+			<img>https://lh4.googleusercontent.com/-6DRE7a5AcB4/AAAAAAAAAAI/AAAAAAAAABw/sNFFQBiXUjk/s0-c-k-no-ns/photo.jpg</img>
+		</link>
+		<link>
+			<name>DuckDuckGo</name>
+			<url>https://duckduckgo.com/</url>
+			<img>https://duckduckgo.com/assets/dax-alt.svg</img>
+		</link>
+	</category>
+	<category name="Dev">
+		<link>
+			<name>Google</name>
+			<url>https://www.google.com</url>
+			<img>https://lh4.googleusercontent.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAADeDU/qAh8CaUbI3Y/s0-c-k-no-ns/photo.jpg</img>
+		</link>
+		<link>
+			<name>Microsoft</name>
+			<url>https://www.microsoft.com</url>
+			<img>https://lh4.googleusercontent.com/-6DRE7a5AcB4/AAAAAAAAAAI/AAAAAAAAABw/sNFFQBiXUjk/s0-c-k-no-ns/photo.jpg</img>
+		</link>
+		<link>
+			<name>DuckDuckGo</name>
+			<url>https://duckduckgo.com/</url>
+			<img>https://duckduckgo.com/assets/dax-alt.svg</img>
+		</link>
+	</category>
 </bookmark>

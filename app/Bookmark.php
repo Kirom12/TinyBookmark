@@ -9,9 +9,8 @@ class Bookmark
 
 	protected $_default_page_data = array(
         'title' => 'Tiny Bookmark', // will use APP_NAME by default
-        'description' => 'Tony PHP bookmark',
-        'tags' => array('bookmark', 'link'),
-        'page' => ''
+        'description' => 'Tiny PHP bookmark',
+        'tags' => array('bookmark', 'link')
     );
 
 	private function __construct(){}
@@ -62,7 +61,7 @@ class Bookmark
 			include($content);
 			$content = ob_get_contents();
 			ob_end_clean();
-			
+
 			include $layout;
 		} else {
 			$this->_404("View {$view} not found");
@@ -74,9 +73,24 @@ class Bookmark
    		echo $message;
    	}
 
+   	protected function _parseXML($file)
+   	{
+   		//$xml = simplexml_load_file($file);
+   		$xml = json_decode(json_encode((array) simplexml_load_file($file)), 1);
+
+   		return $xml;
+   	}
+
    	public function indexAction()
    	{
+   		$bookmarks = $this->_parseXML(BOOKMARKS);
+
+   		// ?><pre><?php
+   		// print_r($bookmarks);
+   		// ?></pre><?php
+
    		$data = array(
+   			'bookmarks' => $bookmarks,
    			'page' => $this->_default_page_data
 		);
 
