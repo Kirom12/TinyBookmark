@@ -1,5 +1,5 @@
 body {
-	background-color: #272822;
+	background-color: #2e2f27;
 	color: white;
 
 	font-family: 'Open Sans', sans-serif;
@@ -7,10 +7,18 @@ body {
 }
 
 #main {
-	padding: 10px;
+	margin-top: -10px;
 }
 
 .bookmarks-category {
+	margin: 10px 0px;
+	padding: 10px;
+	padding-bottom: 40px;
+
+	background-color: #272822;
+}
+
+.bookmarks-category-title {
 
 	font-size: 1.5em;
 }

@@ -10,7 +10,6 @@
 
 	<title><?php echo $page['title'] ?></title>
 	<link rel="stylesheet" href="static/css/normalize.css">
-	<!-- <link rel="stylesheet" href="static/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="static/css/main.css">
 
 	<script src="static/js/jquery.min.js"></script>
