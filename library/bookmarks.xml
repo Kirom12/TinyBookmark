@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bookmark>
+	<category name="Search Engines">
+		<link>
+			<name>Google</name>
+			<url>https://www.google.be</url>
+			<img>https://lh4.googleusercontent.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAADeDU/qAh8CaUbI3Y/s0-c-k-no-ns/photo.jpg</img>
+		</link>
+		<link>
+			<name>Google</name>
+			<url>https://www.google.be</url>
+			<img>https://lh4.googleusercontent.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAADeDU/qAh8CaUbI3Y/s0-c-k-no-ns/photo.jpg</img>
+		</link>
+		<link>
+			<name>Google</name>
+			<url>https://www.google.be</url>
+			<img>https://lh4.googleusercontent.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAADeDU/qAh8CaUbI3Y/s0-c-k-no-ns/photo.jpg</img>
+		</link>
+	</category>
 	<category name="Developpement">
 		<link>
-			<name>Wikitten</name>
-			<url>http://perso.kirom.net/wiki/</url>
-			<img>http://wikitten.vizuina.com/static/img/logo.png</img>
-		</link>
-		<link>
-			<name>TinyTodo</name>
-			<url>http://perso.kirom.net/todo/</url>
-			<img>https://ploum.net/images/gtg_icon.png</img>
-		</link>
-		<link>
-			<name>Trello</name>
-			<url>https://trello.com/</url>
-			<img>https://pbs.twimg.com/profile_images/552177275911671808/JiszgZdZ.png</img>
-		</link>
-		<link>
-			<name>Github</name>
-			<url>https://github.com/</url>
-			<img>https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png</img>
+			<name>Google</name>
+			<url>https://www.google.be</url>
+			<img>https://lh4.googleusercontent.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAADeDU/qAh8CaUbI3Y/s0-c-k-no-ns/photo.jpg</img>
 		</link>
 	</category>
 </bookmark>

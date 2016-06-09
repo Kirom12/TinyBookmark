@@ -1,10 +1,5 @@
 <div class="bookmarks">
-	<?php if (isset($bookmarks['category'][0])): ?>
-		<?php $bks = $bookmarks['category'] ?>
-	<?php else: ?>
-		<?php $bks = $bookmarks ?>
-	<?php endif ?>
-	<?php foreach ($bks as $category): ?>
+	<?php foreach ($bookmarks['category'] as $category): ?>
 		<div class="bookmarks-category">
 			<div class="bookmarks-category-title">
 				<?php echo $category['@attributes']['name'] ?>

@@ -78,6 +78,19 @@ class Bookmark
    		//$xml = simplexml_load_file($file);
    		$xml = json_decode(json_encode((array) simplexml_load_file($file)), 1);
 
+         if (!isset($xml['category'][0])) {
+            $category = $xml['category'];
+            unset($xml['category']);
+            $xml['category'][0] = $category;
+         }
+         foreach ($xml['category'] as $k => $part) {
+            if (!isset($part['link'][0])) {
+               $link = $part['link'];
+               unset($xml['category'][$k]['link']);
+               $xml['category'][$k]['link'][0] = $link;
+            }
+         }
+
    		return $xml;
    	}
 
