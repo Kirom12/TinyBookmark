@@ -6,7 +6,7 @@
 			</div>
 			<div class="bookmarks-links">
 				<?php foreach ($category['link'] as $link): ?>
-					<a href="<?php $link['url'] ?>" target="_blank">
+					<a href="<?php echo $link['url'] ?>" target="_blank">
 						<div class="bookmarks-links-element">
 							<img src="<?php echo $link['img'] ?>" alt="">
 							<div class="bookmarks-links-element-name">
