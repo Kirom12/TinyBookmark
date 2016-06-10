@@ -71,6 +71,8 @@ class Bookmark
    	protected function _404($message = 'Page not found.')
    	{
    		echo $message;
+
+         exit;
    	}
 
    	protected function _parseXML($file)
