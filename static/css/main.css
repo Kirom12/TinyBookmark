@@ -7,6 +7,9 @@ body {
 }
 
 #main {
+}
+
+.bookmarks {
 	margin-top: -10px;
 }
 
@@ -79,6 +82,71 @@ body {
 	-moz-border-radius-bottomleft: 10px;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
+}
+
+.login {
+	max-width: 300px;
+	margin: auto;
+	margin-top: 40px;
+	padding: 20px;
+
+	border-radius: 5px;
+    background-color: #f2f2f2;
+
+    color: black;
+}
+
+.login-title {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.login form {
+	text-align: center;
+}
+
+.login input[type=text], .login input[type=password] {
+	margin: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 5px;
+	display: block;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.login input[type=submit] {
+	margin-top: 8px;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.login input[type=submit]:hover {
+    background-color: #d9d9d9;
+}
+
+.disconnect {
+	padding: 8px;
+
+	float: right;
+
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #FFF;
+}
+
+.disconnect a {
+	text-decoration: none;
+
+	color: #FFF;
+}
+
+.disconnect a:hover {
+	color: #990000;
 }
 
 @media only screen and (max-width: 500px) {

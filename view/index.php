@@ -1,3 +1,8 @@
+<?php if (isset($_SESSION['auth'])): ?>
+	<div class="disconnect">
+		<a href="<?php echo BASE_URL . "/?a=disconnect"?>" title="Disconnect">X</a>
+	</div>
+<?php endif ?>
 <div class="bookmarks">
 	<?php foreach ($bookmarks['category'] as $category): ?>
 		<div class="bookmarks-category">

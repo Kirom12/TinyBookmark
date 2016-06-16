@@ -3,3 +3,5 @@ mytinytodo/
 wikitten/
 root/
 .htaccess.dev
+.htaccess.log
+.htpasswd
