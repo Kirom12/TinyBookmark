@@ -1,7 +1,5 @@
-library/bookmarks.dev.xml
-mytinytodo/
+library/bookmarks.prod.xml
+app/Bookmark.prod.php
+todo/
 wikitten/
 root/
-.htaccess.dev
-.htaccess.log
-.htpasswd
