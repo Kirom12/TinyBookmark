@@ -2,3 +2,4 @@ RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule ^(app/|vendor/|view/) - [F,L,NC]
