@@ -25,7 +25,7 @@ class Bookmark
 		if ($action === null || !method_exists($this, $actionMethod)) {
 			$this->_404();
 		}
-		if (!isset($_SESSION['auth']) && $actionMethod != "connectAction") {
+		if (ENABLE_AUTH && !isset($_SESSION['auth']) && $actionMethod != "connectAction") {
 	 		$this->_login();
 		}
 
@@ -90,12 +90,12 @@ class Bookmark
 	{
 		if (isset($_COOKIE['remember']) && !isset($_SESSION['auth'])) {
 			define('IN_CODE','1');
-			require_once $_SERVER['DOCUMENT_ROOT'] . DS . 'includes' . DS . 'passwd.php';
+			require_once PASSWD_DIRECTORY . DS . 'passwd.php';
 
 			$pseudo = PSEUDO;
 
 			$remember_token = $_COOKIE['remember'];
-			$expected = file_get_contents($_SERVER['DOCUMENT_ROOT'] . DS . 'includes' . DS . 'token');
+			$expected = file_get_contents(PASSWD_DIRECTORY . DS . 'token');
 
 			if ($expected == $remember_token) {
 				$_SESSION['auth'] = $pseudo;
@@ -147,7 +147,7 @@ class Bookmark
 
 	public function indexAction()
 	{
-		$bookmarks = $this->_parseXML(BOOKMARKS);
+		$bookmarks = $this->_parseXML(BOOKMARKS_LIBRARY);
 
 		$data = array(
 			'bookmarks' => $bookmarks,
@@ -165,13 +165,12 @@ class Bookmark
 		// Add the password file outside the site
 		// Site -> /var/www/public_html
 		// Passwd -> /var/www/includes
-		$passwdDirectory = $_SERVER['DOCUMENT_ROOT'] . DS . 'includes';
-		if (!file_exists($passwdDirectory . DS . 'passwd.php')) {
+		if (!file_exists(PASSWD_DIRECTORY . DS . 'passwd.php')) {
 			$this->_404('Password file not found');
 		}
 
 		define('IN_CODE','1');
-		require_once $passwdDirectory . DS . 'passwd.php';
+		require_once PASSWD_DIRECTORY . DS . 'passwd.php';
 
 		$pseudo = htmlspecialchars($_POST['pseudo']);
 		$password = htmlspecialchars($_POST['password']);
@@ -182,7 +181,7 @@ class Bookmark
 			if (isset($_POST['remember']) && $_POST['remember'] === 'true') {
 				$remember_token = $this->_strRandom(120);
 
-				file_put_contents($passwdDirectory . DS . 'token', $remember_token);
+				file_put_contents(PASSWD_DIRECTORY . DS . 'token', $remember_token);
 				setcookie('remember', $remember_token, time() + 60 * 60 * 24 * 14);
 			}
 		}
@@ -197,7 +196,7 @@ class Bookmark
 		if (isset($_SESSION['auth'])) {
 			unset($_SESSION['auth']);
 			setcookie('remember', null, -1);
-			unlink($_SERVER['DOCUMENT_ROOT'] . DS . 'includes' . DS . 'token');
+			unlink(PASSWD_DIRECTORY . DS . 'token');
 		}
 
 		$redirect_url = BASE_URL;
