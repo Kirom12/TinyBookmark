@@ -4,7 +4,7 @@ require "vendor/autoload.php";
 use \App\Bookmark;
 
 define('DS', DIRECTORY_SEPARATOR);
-define('ROOT', dirname(__FILE__));
+define('ROOT', __DIR__);
 define('BOOKMARKS', __DIR__ . DS . 'library' . DS . 'bookmarks.xml');
 
 $request_uri = parse_url($_SERVER['REQUEST_URI']);

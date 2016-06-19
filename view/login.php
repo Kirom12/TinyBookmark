@@ -7,6 +7,8 @@
 		<label for="password">Password :</label>
 		<input type="password" id="password" name="password">
 
+		<input type="checkbox" id="remember-box" name="remember" value="true"><label for="remember-box"> Remember</label>
+
 		<div class="login-submit">
 			<input type="submit" value="Login">
 		</div>
