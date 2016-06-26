@@ -1,5 +1,6 @@
 library/bookmarks.prod.xml
-app/Bookmark.prod.php
 todo/
 wikitten/
 root/
+config.prod.php
+library/img

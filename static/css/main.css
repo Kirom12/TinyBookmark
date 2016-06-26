@@ -15,8 +15,8 @@ body {
 
 .bookmarks-category {
 	margin: 10px 0px;
-	padding: 10px;
-	padding-bottom: 40px;
+	padding: 5px 10px;
+	padding-bottom: 20px;
 
 	background-color: #272822;
 
@@ -38,8 +38,8 @@ body {
 
 .bookmarks-links-element {
 	position: relative;
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 
 	margin: 5px;
 
@@ -56,7 +56,7 @@ body {
 }
 
 .bookmarks-links-element img {
-	width: 100px;
+	width: 80px;
 	height: auto;
 
 	-webkit-border-radius: 10px;
@@ -130,9 +130,11 @@ body {
     background-color: #d9d9d9;
 }
 
-.disconnect {
-	padding: 8px;
+.login-checkbox {
+	text-align: left;
+}
 
+.disconnect {
 	float: right;
 
 	background-color: rgba(0, 0, 0, 0.4);
@@ -140,6 +142,9 @@ body {
 }
 
 .disconnect a {
+	padding: 5px 12px;
+
+	display: block;
 	text-decoration: none;
 
 	color: #FFF;
